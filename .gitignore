@@ -1,0 +1,26 @@
+# Local .terraform directories
+**/.terraform/*
+
+# Terraform state files (contain resource IDs, sometimes secrets)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files that might contain secrets
+*.tfvars
+*.tfvars.json
+!terraform.tfvars.example
+
+# Terraform lock file — commit this one in teams (remove this line once you have it)
+# .terraform.lock.hcl
+
+# CLI config that can contain credentials
+.terraformrc
+terraform.rc
+
+# OS files
+.DS_Store
