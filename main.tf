@@ -1,10 +1,6 @@
 resource "azurerm_resource_group" "main" {
-  name     = "rg-${var.project_name}-${var.environment}"
-  location = "centralindia"
+  name     = "rg-${local.name_prefix}"
+  location = var.location
 
-  tags = {
-    Project     = var.project_name
-    ManagedBy   = "Terraform"
-    Environment = var.environment
-  }
+  tags = local.common_tags
 }
