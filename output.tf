@@ -1,14 +1,7 @@
 output "resource_group_name" {
-  description = "Name of the created resource group"
-  value       = azurerm_resource_group.main.name
+  value = azurerm_resource_group.rg.name
 }
 
-output "resource_group_id" {
-  description = "Full Azure resource ID of the resource group"
-  value       = azurerm_resource_group.main.id
-}
-
-output "location" {
-  description = "Azure region this project is deployed in"
-  value       = azurerm_resource_group.main.location
+output "storage_account_name" {
+  value = azurerm_storage_account.sa.name
 }
